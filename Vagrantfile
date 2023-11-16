@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
   # Define the first node ; change
   config.vm.define "node1" do |node1|
-    node1.vm.box = "centos/7"
+    node1.vm.box = "bento/centos-7"
     node1.vm.network "public_network", bridge: "Беспроводная сеть", ip: "192.168.88.101"
     node1.vm.hostname = "node1"
     node1.vm.provider "virtualbox" do |vb|
